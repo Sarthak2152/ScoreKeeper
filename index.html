@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Score keeper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="img-container">
+        <img
+          src="https://images.unsplash.com/photo-1534158914592-062992fbe900?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3784&q=80"
+          alt="picture of table tennis racket" />
+      </div>
+      <div class="content-container">
+        <p class="heading">Ping Pong Score Keeper</p>
+        <div class="score-container">
+          <p class="score">
+            <span class="scoreOne">0</span> to <span class="scoreTwo">0</span>
+          </p>
+          <p>Use the buttons below to keep score</p>
+          <label for="dropdown">Playing To </label>
+          <select name="matches" id="dropdown">
+            <option value="0">select number of games</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+          </select>
+        </div>
+        <div class="btn-container">
+          <button class="btn disable green increaseScoreOne">
+            +1 Player One
+          </button>
+          <button class="btn disable blue increaseScoreTwo">
+            +1 Player Two
+          </button>
+          <button class="btn red reset margin--zero">Reset</button>
+        </div>
+      </div>
+    </div>
+    <script defer src="script.js"></script>
+  </body>
+</html>
